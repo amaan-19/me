@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    color: #2d4a2d;
+    background: #f8fdf8;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+
+/* Sticky Left Sidebar */
+.sidebar {
+    background: #f1f7f1;
+    padding: 3rem 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e8f2e8;
+}
+
+.profile {
+    margin-bottom: 3rem;
+}
+
+.profile h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #2d5a3d;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.profile .subtitle {
+    font-family: 'Outfit', sans-serif;
+    color: #556b55;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navigation {
+    margin-bottom: 3rem;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    margin-bottom: 1rem;
+}
+
+.navigation ul li a {
+    font-family: 'Outfit', sans-serif;
+    color: #4a7c4a;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 0.5rem 0;
+    letter-spacing: 0.01em;
+}
+
+.navigation ul li a:hover {
+    color: #2d5a2d;
+}
+
+.links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.links a {
+    font-family: 'JetBrains Mono', monospace;
+    color: #6b8e6b;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #4a7c4a;
+}
+
+/* Scrollable Content Area */
+.content {
+    padding: 3rem;
+    max-width: 700px;
+    overflow-y: auto;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.section h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2d5a3d;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.section p {
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 1.5rem;
+    color: #556b55;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.project {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f1f7f1;
+    border-radius: 6px;
+    border: 1px solid #e8f2e8;
+}
+
+.project h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #2d5a3d;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.project p {
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.footer {
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e8f2e8;
+    color: #6b8e6b;
+    font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+        padding: 2rem 1.5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .profile {
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+
+    .profile h1 {
+        font-size: 1.5rem;
+    }
+
+    .navigation {
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .navigation ul li {
+        margin-bottom: 0;
+    }
+
+    .navigation ul li a {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .links {
+        margin-top: 0;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .content {
+        padding: 2rem 1.5rem;
+    }
+
+    .section {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .profile {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .navigation {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .content {
+        padding: 1.5rem 1rem;
+    }
+}
