@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     line-height: 1.6;
     color: #2d4a2d;
     background: #f8fdf8;
@@ -34,8 +34,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.profile h1 {
-    font-family: 'Outfit', sans-serif;
+h1 {
     font-size: 2rem;
     font-weight: 300;
     color: #2d5a3d;
@@ -44,38 +43,9 @@ body {
 }
 
 .profile .subtitle {
-    font-family: 'Outfit', sans-serif;
     color: #556b55;
     font-size: 1rem;
     font-weight: 400;
-}
-
-.navigation {
-    margin-bottom: 3rem;
-}
-
-.navigation ul {
-    list-style: none;
-}
-
-.navigation ul li {
-    margin-bottom: 1rem;
-}
-
-.navigation ul li a {
-    font-family: 'Outfit', sans-serif;
-    color: #4a7c4a;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 400;
-    transition: color 0.3s ease;
-    display: block;
-    padding: 0.5rem 0;
-    letter-spacing: 0.01em;
-}
-
-.navigation ul li a:hover {
-    color: #2d5a2d;
 }
 
 .links {
@@ -86,7 +56,6 @@ body {
 }
 
 .links a {
-    font-family: 'JetBrains Mono', monospace;
     color: #6b8e6b;
     text-decoration: none;
     font-size: 0.85rem;
@@ -109,7 +78,6 @@ body {
 }
 
 .section h2 {
-    font-family: 'Outfit', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: #2d5a3d;
@@ -118,7 +86,6 @@ body {
 }
 
 .section p {
-    font-family: 'Outfit', sans-serif;
     margin-bottom: 1.5rem;
     color: #556b55;
     line-height: 1.7;
@@ -134,7 +101,6 @@ body {
 }
 
 .project h3 {
-    font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
     color: #2d5a3d;
@@ -143,14 +109,12 @@ body {
 }
 
 .project p {
-    font-family: 'Outfit', sans-serif;
     margin-bottom: 0;
     font-size: 0.95rem;
     font-weight: 400;
 }
 
 .footer {
-    font-family: 'JetBrains Mono', monospace;
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid #e8f2e8;
