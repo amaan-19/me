@@ -1,13 +1,16 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import SinglePageLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout pageTitle="Amaan Khan - Home">
-  <h1>Welcome</h1>
-  <p>I'm a masters student studying cybersecurity engineering at Washington University in St. Louis.</p>
+<SinglePageLayout pageTitle="Home">
+  <!-- About Section -->
+  <section id="about">
+    <p class="lead">
+      I'm a Master's student in Cybersecurity Engineering at Washington University in St. Louis. I'm interested in security for autonomous cyber-physical systems, with a focus on adversarial robustness.
+    </p>
+  </section>
 
-  <h2>Recent Posts</h2>
-  <ul>
-    <li><a href="/blog/first-post">My First Post</a></li>
-  </ul>
-</BaseLayout>
+  <p class="empty-message">
+    More coming soon.
+  </p>
+</SinglePageLayout>
