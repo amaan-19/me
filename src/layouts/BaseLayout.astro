@@ -27,6 +27,7 @@ const { pageTitle, description } = Astro.props;
     <div class="nav-container">
       <div class="nav-links">
         <a href="#about" class="nav-link">About</a>
+        <a href="#updates" class="nav-link">Updates</a>
       </div>
     </div>
   </nav>
@@ -429,6 +430,37 @@ const { pageTitle, description } = Astro.props;
   section {
     margin-bottom: 4rem;
     scroll-margin-top: calc(var(--nav-height) + 2rem);
+  }
+
+  /* Updates Section */
+  .updates-list {
+    display: grid;
+    gap: 0;
+    border-left: 2px solid var(--color-accent);
+    padding-left: 0;
+  }
+
+  .update-item {
+    padding: 1rem 0 1rem 1.5rem;
+    position: relative;
+  }
+
+  .update-item:last-child {
+    border-bottom: none;
+  }
+
+  .update-date {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .update-text {
+    margin: 0;
+    color: var(--color-text);
+    font-size: 0.9375rem;
   }
 
   /* Mobile Responsive */
