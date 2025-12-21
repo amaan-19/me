@@ -478,16 +478,25 @@ const { pageTitle, description } = Astro.props;
   }
 
   @media (max-width: 768px) {
-    .nav-links {
-      display: none;
+    .nav {
+      left: 0; /* Full width on mobile */
     }
 
     .nav-container {
-      padding-left: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .logo {
+      font-size: 1rem;
+    }
+
+    .nav-links {
+      display: none; /* Hide navigation links on mobile */
     }
 
     .layout {
-      min-height: 100vh;
+      grid-template-columns: 1fr;
     }
 
     .sidebar {
@@ -509,6 +518,7 @@ const { pageTitle, description } = Astro.props;
 
     .main-content {
       margin-left: 0;
+      margin-top: var(--nav-height);
       padding: 2rem 1.5rem;
     }
 
